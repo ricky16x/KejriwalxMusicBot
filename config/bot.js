@@ -9,7 +9,7 @@ module.exports = {
 
     discord: {
         prefix: 'x!',
-        activity: 'Delhi Legislative Assembly',
+        activity: 'Delhi Legislative Assembly//x!help',
     },
 
     filters: ['8D', 'gate', 'haas', 'phaser', 'treble', 'tremolo', 'vibrato', 'reverse', 'karaoke', 'flanger', 'mcompand', 'pulsator', 'subboost', 'bassboost', 'vaporwave', 'nightcore', 'normalizer', 'surrounding'],
