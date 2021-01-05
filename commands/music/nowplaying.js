@@ -5,11 +5,11 @@ module.exports = {
     utilisation: '{prefix}nowplaying',
 
     execute(client, message) {
-        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - You're not in a voice channel !`);
+        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} - VC me nhi hai tu bhadwe!`);
 
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - You are not in the same voice channel !`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} - Same VC me hai bhi tu?`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - No music currently playing !`);
+        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} - Ghanta kuch na bj rha!`);
 
         const track = client.player.nowPlaying(message);
         const filters = [];
@@ -20,7 +20,7 @@ module.exports = {
             embed: {
                 color: 'RED',
                 author: { name: track.title },
-                footer: { text: 'This bot is made by RickRx20#6002!' },
+                footer: { text: 'This bot is made by -🌙✨-#6002!' },
                 fields: [
                     { name: 'Channel', value: track.author, inline: true },
                     { name: 'Requested by', value: track.requestedBy.username, inline: true },

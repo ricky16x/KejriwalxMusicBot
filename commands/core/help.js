@@ -13,7 +13,7 @@ module.exports = {
                 embed: {
                     color: 'ORANGE',
                     author: { name: 'Help panel' },
-                    footer: { text: 'This bot was made by RickRx20#6002!' },
+                    footer: { text: 'This bot was made by -🌙✨-#6002!' },
                     fields: [
                         { name: 'Bot', value: infos },
                         { name: 'Music', value: music },
@@ -26,13 +26,13 @@ module.exports = {
         } else {
             const command = message.client.commands.get(args.join(" ").toLowerCase()) || message.client.commands.find(x => x.aliases && x.aliases.includes(args.join(" ").toLowerCase()));
 
-            if (!command) return message.channel.send(`${client.emotes.error} - I did not find this command !`);
+            if (!command) return message.channel.send(`${client.emotes.error} - Shyd hi aisa koi command hai 😔!`);
 
             message.channel.send({
                 embed: {
                     color: 'ORANGE',
                     author: { name: 'Help pannel' },
-                    footer: { text: 'This bot was made by RickRx20#6002!' },
+                    footer: { text: 'This bot was made by -🌙✨-#6002!' },
                     fields: [
                         { name: 'Name', value: command.name, inline: true },
                         { name: 'Category', value: command.category, inline: true },
